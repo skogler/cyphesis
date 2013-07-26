@@ -45,7 +45,7 @@
 #include "UpdateTester.h"
 #include "Admin.h"
 #include "TCPListenFactory.h"
-#include "TeleportAuthenticator.h"
+#include "PossessionAuthenticator.h"
 #include "TrustedConnection.h"
 
 #include "rulesets/BulletDomain.h"
@@ -200,7 +200,7 @@ int main(int argc, char ** argv)
 
     Ruleset::init(ruleset_name);
 
-    TeleportAuthenticator::init();
+    PossessionAuthenticator::init();
 
     StorageManager * store = new StorageManager(*world);
 
@@ -435,7 +435,7 @@ int main(int argc, char ** argv)
     EntityBuilder::instance()->flushFactories();
     EntityBuilder::del();
     ArithmeticBuilder::del();
-    TeleportAuthenticator::del();
+    PossessionAuthenticator::del();
 
     Inheritance::clear();
 

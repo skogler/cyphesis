@@ -111,9 +111,9 @@ SERVER_SOURCES = \
 		CommPSQLSocket.cpp CommPSQLSocket.h \
 		IdlePSQLConnector.cpp IdlePSQLConnector.h \
 		TeleportState.cpp TeleportState.h \
-		TeleportAuthenticator.cpp TeleportAuthenticator.h \
+		PossessionAuthenticator.cpp PossessionAuthenticator.h \
 		TeleportProperty.cpp TeleportProperty.h \
-		PendingTeleport.cpp PendingTeleport.h \
+		PendingPossession.cpp PendingPossession.h \
 		CommPeer.cpp CommPeer.h \
 		CommPythonClient.cpp CommPythonClient.h \
 		CommPythonClientFactory.cpp CommPythonClientFactory.h \
