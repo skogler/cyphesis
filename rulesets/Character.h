@@ -30,7 +30,7 @@ class Task;
 /// \brief This is the class for anything controlled by an AI mind, or
 /// external controller like a player client.
 ///
-/// It currently contains large ammounts of code for handling movement
+/// It currently contains large amounts of code for handling movement
 /// which should probably be moved into Thing (PhysicalEntity).
 /// This class currently assumes it is used to handle all animals,
 /// so handles food, nourishment and intoxication.
