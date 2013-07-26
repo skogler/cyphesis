@@ -38,6 +38,7 @@ extern int TICK_NO;
 extern int UNSEEN_NO;
 extern int UPDATE_NO;
 extern int TELEPORT_NO;
+extern int POSSESS_NO;
 
 } } }
 

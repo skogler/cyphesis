@@ -77,6 +77,10 @@ void installCustomOperations()
 
     i.addChild(atlasOpDefinition("teleport", "action"));
     Atlas::Objects::Operation::TELEPORT_NO = atlas_factories->addFactory("teleport", &Atlas::Objects::generic_factory);
+
+    i.addChild(atlasOpDefinition("possess", "set"));
+    Atlas::Objects::Operation::POSSESS_NO = atlas_factories->addFactory("possess", &Atlas::Objects::generic_factory);
+
 }
 
 void installCustomEntities()
