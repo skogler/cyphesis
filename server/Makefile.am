@@ -119,7 +119,9 @@ SERVER_SOURCES = \
 		CommPythonClientFactory.cpp CommPythonClientFactory.h \
 		CommClientFactory.cpp CommClientFactory.h \
 		CommClientFactory_impl.h \
-		server.cpp server.h
+		server.cpp server.h \
+		ExternalMindsConnection.cpp ExternalMindsConnection.h \
+		ExternalMindsManager.cpp ExternalMindsManager.h
 
 COMM_SOURCES = \
 		TCPListenFactory.cpp TCPListenFactory.h \
