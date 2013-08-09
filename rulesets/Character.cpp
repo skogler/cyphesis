@@ -296,6 +296,8 @@ int Character::linkExternal(Link * link)
     update->setArgs1(update_arg);
 
     sendWorld(update);
+
+    externalLinkChanged.emit();
     return 0;
 }
 
@@ -335,6 +337,7 @@ int Character::unlinkExternal(Link * link)
     // leave it in place, as it takes care of the disconnected
     // character.
     m_externalMind->linkUp(0);
+    externalLinkChanged.emit();
     return 0;
 }
 
