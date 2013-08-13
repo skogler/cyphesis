@@ -38,6 +38,7 @@
 
 #include <Atlas/Objects/Anonymous.h>
 #include <Atlas/Objects/Operation.h>
+#include <Atlas/Objects/Generic.h>
 #include <Atlas/Message/Element.h>
 
 #include <wfmath/atlasconv.h>
@@ -247,8 +248,8 @@ void StorageManager::storeThoughts(LocatedEntity * ent)
 
         Atlas::Objects::Operation::Get get;
 
-        Operation get_arg;
-        get_arg->setParents( { "thought" });
+        Atlas::Objects::Operation::Generic get_arg;
+        get_arg->setType("thought", Atlas::Objects::Operation::THOUGHT_NO);
         get_arg->setId(character->getId());
 
         get->setArgs1(get_arg);
