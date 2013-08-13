@@ -21,7 +21,7 @@
 
 #include "Thing.h"
 
-class BaseMind;
+class ProxyMind;
 class ExternalMind;
 class Link;
 class Movement;
@@ -43,6 +43,9 @@ class Character : public Thing {
   protected:
     /// \brief Handler for simulating movement under direction from the mind
     Movement & m_movement;
+    /// \brief Internal AI mind keeping track of what this character experiences.
+    ProxyMind * m_proxyMind;
+
 
     /// \brief Energy loss by metabolism per tick
     static const double energyConsumption;
@@ -63,8 +66,6 @@ class Character : public Thing {
 
     friend class Movement;
   public:
-    /// \brief Internal AI mind controlling this character
-    BaseMind * m_mind;
     /// \brief External network connected agent controlling this character
     ExternalMind * m_externalMind;
 

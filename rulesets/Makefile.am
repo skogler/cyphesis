@@ -59,7 +59,9 @@ librulesetentity_a_SOURCES = \
 			     Task.cpp Task.h \
 			     ArithmeticScript.cpp ArithmeticScript.h \
 			     ArithmeticFactory.cpp ArithmeticFactory.h \
-			     SuspendedProperty.cpp SuspendedProperty.h
+			     SuspendedProperty.cpp SuspendedProperty.h \
+			     ProxyMind.cpp ProxyMind.h
+			     
 
 
 librulesetmind_a_SOURCES = BaseMind.cpp BaseMind.h \
